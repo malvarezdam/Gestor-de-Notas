@@ -1,0 +1,38 @@
+TERMINOS DE SERVICIO - GESTOR DE NOTAS
+Ultima actualizacion: 2026-08-01
+Contacto: malvarezda.m@gmail.com
+
+1. ACEPTACION
+Al usar Gestor de Notas, el usuario acepta estos terminos. Si no esta de
+acuerdo, simplemente no debe usar la aplicacion.
+
+2. DESCRIPCION DEL SERVICIO
+Gestor de Notas es una herramienta gratuita, de codigo abierto, para
+llevar el control de notas universitarias. Se ofrece "tal cual" (as is),
+sin garantias de ningun tipo, explicitas o implicitas.
+
+3. RESPONSABILIDAD DEL USUARIO
+El usuario es el unico responsable de la exactitud de los datos que
+ingresa (notas, ponderaciones, etc.) y de respaldar su propia informacion
+(por ejemplo, exportandola o guardandola en su Google Drive). El uso de
+esta aplicacion no reemplaza los registros oficiales de notas de ninguna
+institucion educativa.
+
+4. SIN GARANTIAS NI RESPONSABILIDAD
+El desarrollador no se hace responsable por perdida de datos, errores de
+calculo, interrupciones del servicio, ni por decisiones academicas
+tomadas en base a la informacion mostrada por la aplicacion. Se
+recomienda siempre verificar las notas finales con las fuentes oficiales
+de la institucion educativa correspondiente.
+
+5. CODIGO ABIERTO
+El codigo fuente de esta aplicacion es publico y esta disponible en:
+https://github.com/malvarezdam/Gestor-de-Notas
+
+6. CAMBIOS AL SERVICIO
+La aplicacion puede actualizarse, modificarse o discontinuarse en
+cualquier momento, sin previo aviso, dado que es un proyecto personal
+sin fines de lucro.
+
+7. CONTACTO
+Para consultas sobre estos terminos, escribir a malvarezda.m@gmail.com.

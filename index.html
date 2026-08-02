@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gestor de Notas</title>
+    <link rel="icon" href="assets/favicon.svg" />
+    <link data-trunk rel="css" href="styles/main.css" />
+    <link data-trunk rel="copy-dir" href="assets" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+  <body>
+    <script>
+      let tokenClient;
+      window.gisRequestAccessToken = function (clientId, onToken, onError) {
+        try {
+          if (!tokenClient) {
+            tokenClient = google.accounts.oauth2.initTokenClient({
+              client_id: clientId,
+              scope: "https://www.googleapis.com/auth/drive.file",
+              callback: (resp) => {
+                if (resp && resp.access_token) {
+                  onToken(resp.access_token);
+                } else {
+                  onError(resp && resp.error ? resp.error : "Sin token");
+                }
+              },
+              error_callback: (err) => {
+                onError(err && err.message ? err.message : "Error de autenticación");
+              },
+            });
+          }
+          tokenClient.requestAccessToken();
+        } catch (e) {
+          onError(String(e));
+        }
+      };
+    </script>
+  </body>
+</html>

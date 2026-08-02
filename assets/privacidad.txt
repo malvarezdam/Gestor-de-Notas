@@ -1,0 +1,55 @@
+POLITICA DE PRIVACIDAD - GESTOR DE NOTAS
+Ultima actualizacion: 2026-08-01
+Contacto: malvarezda.m@gmail.com
+
+1. QUE ES ESTA APLICACION
+Gestor de Notas es una aplicacion web gratuita y de codigo abierto para
+llevar el control de notas universitarias (ramos, secciones, tipos de
+evaluacion y evaluaciones, con calculo de promedio ponderado). Se ejecuta
+enteramente en el navegador del usuario; no tiene servidor propio ni base
+de datos central.
+
+2. QUE DATOS SE MANEJAN
+La aplicacion maneja unicamente los datos que el propio usuario ingresa:
+nombres de ramos, secciones, tipos de evaluacion, evaluaciones, notas,
+ponderaciones y ajustes de escala (nota minima/maxima). No se recopila
+ningun otro dato personal, y la aplicacion no incluye analitica ni
+rastreo de ningun tipo.
+
+3. DONDE SE GUARDAN LOS DATOS
+- Por defecto, todos los datos se guardan localmente en el navegador del
+  usuario (localStorage), y nunca salen de su computador.
+- Si el usuario decide conectar su cuenta de Google Drive (accion
+  explicita, mediante el boton "Conectar Google Drive"), la aplicacion
+  puede guardar y leer un unico archivo de datos (un JSON con el
+  contenido descrito en el punto 2) directamente en el Google Drive del
+  propio usuario, usando su propia cuenta.
+
+4. USO DE LA API DE GOOGLE DRIVE
+La aplicacion solicita el permiso (scope) "drive.file" de la API de
+Google Drive, que segun la propia politica de Google solo permite
+acceder a los archivos que la aplicacion misma crea - nunca al resto del
+Drive del usuario, ni a sus fotos, documentos u otros archivos.
+
+El token de acceso obtenido mediante este permiso vive unicamente en la
+memoria del navegador durante la sesion activa: nunca se guarda en disco,
+nunca se envia a ningun servidor de terceros, y expira automaticamente
+(aproximadamente 1 hora).
+
+La aplicacion no comparte, vende ni transmite ningun dato a terceros. El
+unico destino de los datos, si el usuario lo autoriza expresamente, es el
+propio Google Drive del usuario.
+
+5. DERECHOS DEL USUARIO
+Como todos los datos quedan bajo el control directo del usuario (en su
+navegador o en su propio Google Drive), el usuario puede en cualquier
+momento: exportar sus datos, borrarlos desde la aplicacion, revocar el
+acceso otorgado a la aplicacion desde https://myaccount.google.com/permissions,
+o borrar el archivo de datos directamente desde su Google Drive.
+
+6. CAMBIOS A ESTA POLITICA
+Si esta politica cambia, se actualizara este mismo documento en el
+repositorio publico del proyecto.
+
+7. CONTACTO
+Para consultas sobre esta politica, escribir a malvarezda.m@gmail.com.
